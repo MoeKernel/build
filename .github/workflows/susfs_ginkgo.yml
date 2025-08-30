@@ -1,4 +1,4 @@
-name: Build Kernel ginkgo (Fifteen/KSU+susfs)
+name: Build Kernel ginkgo (Sixteen/inline/KSU+susfs)
 
 on:
   workflow_dispatch:
@@ -19,7 +19,7 @@ jobs:
         uses: MoeKernel/github-repo-action@v3.1
         with:
           depth: 1
-          branch: 'ksu'
+          branch: 'sixteen'
           owner: 'MoeKernel'
           repository: 'android_kernel_xiaomi_ginkgo'
 
