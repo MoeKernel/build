@@ -1,4 +1,4 @@
-name: Build Kernel Bangkk (gdx, fts)
+name: Build Kernel Bangkk (Sixteen/inline/gdx/fts)
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
         uses: MoeKernel/github-repo-action@v3.1
         with:
           depth: 1
-          branch: ${{ matrix.build_type == 'gdx' && 'fifteen' || matrix.build_type == 'fts' && 'fifteen' }}
+          branch: ${{ matrix.build_type == 'gdx' && 'sixteen' || matrix.build_type == 'fts' && 'sixteen' }}
           owner: 'MoeKernel'
           repository: 'android_kernel_motorola_bangkk'
 
